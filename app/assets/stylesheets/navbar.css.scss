@@ -1,0 +1,29 @@
+@import "variables";
+@import "mixins";
+
+.navbar {
+	width: $nav-width;
+	left: 0;
+	position: absolute;
+	color: $brand-dark;
+	padding: 0 25px;
+	font-size: $brand-size-smaller;
+
+	ul {
+		list-style-type: none;
+		li {
+			a {
+				cursor: pointer;
+				text-decoration: none;
+				&:hover {
+					color: $brand-highlight;
+				}
+			}
+		}
+	}
+}
+
+#main-content {
+	position: relative;
+	left: $nav-width;
+}
