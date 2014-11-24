@@ -11,4 +11,8 @@
 		= render 'layouts/navbar.html.haml'
 
 		%article#main-content
+			%p.notice
+				= notice
+			%p.alert
+				= alert
 			= yield
